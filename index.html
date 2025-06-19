@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="desserts-section">
+            <h1>Desserts</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-waffle-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Waffle</div>
+                        <div class="dessert-name">Waffle with Berries</div>
+                        <div class="dessert-price">$6.50</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-creme-brulee-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Crème Brûlée</div>
+                        <div class="dessert-name">Vanilla Bean Crème Brûlée</div>
+                        <div class="dessert-price">$7.00</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-macaron-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Macaron</div>
+                        <div class="dessert-name">Macaron Mix of Five</div>
+                        <div class="dessert-price">$8.00</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-tiramisu-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Tiramisu</div>
+                        <div class="dessert-name">Classic Tiramisu</div>
+                        <div class="dessert-price">$5.50</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-baklava-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Baklava</div>
+                        <div class="dessert-name">Pistachio Baklava</div>
+                        <div class="dessert-price">$4.00</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-meringue-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Pie</div>
+                        <div class="dessert-name">Lemon Meringue Pie</div>
+                        <div class="dessert-price">$5.00</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-cake-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Cake</div>
+                        <div class="dessert-name">Red Velvet Cake</div>
+                        <div class="dessert-price">$4.50</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-brownie-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Brownie</div>
+                        <div class="dessert-name">Salted Caramel Brownie</div>
+                        <div class="dessert-price">$5.50</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="dessert-card">
+                    <div class="dessert-image" style="background-image: url('./images/image-panna-cotta-desktop.jpg');"></div>
+                    <div class="dessert-info">
+                        <div class="dessert-category">Panna Cotta</div>
+                        <div class="dessert-name">Vanilla Panna Cotta</div>
+                        <div class="dessert-price">$6.50</div>
+                        <button class="add-to-cart-btn">
+                            <span class="cart-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-section">
+            <div class="cart-header">
+                <h2 class="cart-title">Your Cart (<span id="cart-count">0</span>)</h2>
+                <div class="empty-cart active" id="empty-cart">
+                    <div class="cart-icon-large">
+                        <img src="./images/illustration-empty-cart.svg"/>
+                    </div>
+                    <p class="cart-message">Your added items will appear here</p>
+                </div>
+                <div class="cart-content" id="cart-content">
+                    <div class="cart-items" id="cart-items"></div>
+                    <div class="order-total">
+                        <span>Order Total</span>
+                        <span class="order-total-price" id="order-total">$0.00</span>
+                    </div>
+                    <div class="carbon-neutral">
+                        <span class="carbon-icon">
+                            <img src="./images/icon-carbon-neutral.svg"/>
+                        </span>
+                        <span>This is a <strong>carbon-neutral</strong> delivery</span>
+                    </div>
+                    <button class="confirm-order-btn" id="confirm-order-btn">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="confirmation-header">
+                <span class="check-icon">
+                    <img src="./images/icon-order-confirmed.svg"/>
+                </span>
+                <h3>Order Confirmed</h3>
+                <p>We hope you enjoy your food!</p>
+            </div>
+            <div class="order-items" id="order-items"></div>
+            <div class="order-total">
+                <span>Order Total</span>
+                <span class="order-total-price" id="modal-order-total">$0.00</span>
+            </div>
+            <div class="carbon-neutral">
+                 <span class="carbon-icon">
+                            <img src="./images/icon-carbon-neutral.svg"/>
+                        </span>
+                <span>This is a <strong>carbon-neutral</strong> delivery</span>
+            </div>
+            <button class="confirm-order-btn" id="start-new-order-btn">Start New Order</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
