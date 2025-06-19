@@ -96,6 +96,7 @@ body {
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
+    top: 220px;
 }
 
 .add-to-cart-btn:hover {
