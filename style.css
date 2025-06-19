@@ -94,6 +94,7 @@ body {
     font-size: 14px;
     display: flex;
     align-items: center;
+    position: absolute;
     gap: 5px;
     transition: all 0.3s ease;
 }
