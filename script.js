@@ -259,3 +259,11 @@ updateCartDisplay();
 
 document.getElementById('confirm-order-btn').addEventListener('click', confirmOrder);
 document.getElementById('start-new-order-btn').addEventListener('click', startNewOrder);
+
+function toggleDropdown() {
+            const dropdown = document.getElementById('statsDropdown');
+            const arrow = document.querySelector('.dropdown-arrow');
+            
+            dropdown.classList.toggle('open');
+            arrow.classList.toggle('rotated');
+        }
